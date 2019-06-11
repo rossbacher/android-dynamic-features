@@ -27,6 +27,16 @@ android {
         targetSdkVersion versions.targetSdk
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
+    flavorDimensions "dynamic"
+    productFlavors {
+        notdynamic {
+            dimension "dynamic"
+        }
+        dynamic {
+            dimension "dynamic"
+        }
+    }
 }
 
 dependencies {

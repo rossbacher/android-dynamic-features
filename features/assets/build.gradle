@@ -24,6 +24,16 @@ android {
         minSdkVersion versions.minSdk
         targetSdkVersion versions.targetSdk
     }
+
+    flavorDimensions "dynamic"
+    productFlavors {
+        notdynamic {
+            dimension "dynamic"
+        }
+        dynamic {
+            dimension "dynamic"
+        }
+    }
 }
 
 dependencies {

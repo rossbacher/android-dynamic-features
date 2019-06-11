@@ -43,6 +43,16 @@ android {
             path "src/main/cpp/CMakeLists.txt"
         }
     }
+
+    flavorDimensions "dynamic"
+    productFlavors {
+        notdynamic {
+            dimension "dynamic"
+        }
+        dynamic {
+            dimension "dynamic"
+        }
+    }
 }
 
 dependencies {
